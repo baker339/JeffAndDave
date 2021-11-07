@@ -364,12 +364,12 @@ select {
   background: hsl(var(--clr-dark) / 0.9);
 }
 
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+/* @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .primary-navigation {
     background: hsl(var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
   }
-}
+} */
 
 .primary-navigation a {
   text-decoration: none;
