@@ -361,7 +361,6 @@ select {
   margin: 0;
   background: hsl(var(--clr-white) / 0.05);
   backdrop-filter: blur(1.5rem);
-  /* background: hsl(var(--clr-dark) / 0.9); */
 }
 
 .primary-navigation a {
@@ -417,6 +416,10 @@ select {
 
   .primary-navigation.underline-indicators > .active {
     border: 0;
+  }
+
+  .primary-navigation a {
+    font-size: var(--fs-700);
   }
 
   .mobile-nav-toggle {
