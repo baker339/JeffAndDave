@@ -385,6 +385,15 @@ select {
 }
 
 @media (max-width: 35rem) {
+  .large-button {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    width: 3rem;
+  }
+
   .primary-navigation {
     --underline-gap: 0.5rem;
     position: fixed;
