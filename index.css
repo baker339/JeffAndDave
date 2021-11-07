@@ -359,16 +359,9 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
-  /* background: hsl(var(--clr-white) / 0.05);
-  backdrop-filter: blur(1.5rem); */
-  background: hsl(var(--clr-dark) / 0.9);
-}
-
-@supports ((backdrop-filter: none)) {
-  .primary-navigation {
-    background: hsl(var(--clr-white) / 0.05);
-    backdrop-filter: blur(1.5rem);
-  }
+  background: hsl(var(--clr-white) / 0.05);
+  backdrop-filter: blur(1.5rem);
+  /* background: hsl(var(--clr-dark) / 0.9); */
 }
 
 .primary-navigation a {
@@ -385,6 +378,17 @@ select {
 }
 
 @media (max-width: 35rem) {
+  .primary-navigation {
+    background: hsl(var(--clr-dark) / 0.9);
+  }
+
+  @supports ((backdrop-filter: none)) {
+    .primary-navigation {
+      background: hsl(var(--clr-white) / 0.05);
+      backdrop-filter: blur(1.5rem);
+    }
+  }
+
   .large-button {
     font-size: 1.5rem;
   }
